@@ -1,5 +1,5 @@
 {
-    "name": "wplib/wp-composer-installers",
+    "name": "pbadigital/wp-composer-installers",
     "description": "Composer Installers for WordPress projects",
     "type": "composer-plugin",
     "version": "1.2",
