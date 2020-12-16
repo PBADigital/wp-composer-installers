@@ -134,12 +134,12 @@ class WordPressInstallationManager extends InstallationManager {
 	/**
 	 * Executes solver operation.
 	 *
-	 * @param RepositoryInterface $repo      repository in which to check
-	 * @param OperationInterface  $operation operation instance
+	 * @param RepositoryInterface $repo repository in which to check
+	 * @param array $operations operation instance
 	 */
-	public function execute(RepositoryInterface $repo, OperationInterface $operation)
+	public function execute(RepositoryInterface $repo, array $operations)
 	{
-		$this->_installationManager->execute($repo,$operation);
+		$this->_installationManager->execute($repo, $operations);
 	}
 
 	/**
