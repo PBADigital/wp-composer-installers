@@ -137,7 +137,7 @@ class WordPressInstallationManager extends InstallationManager {
 	 * @param RepositoryInterface $repo repository in which to check
 	 * @param array $operations operation instance
 	 */
-	public function execute(InstalledRepositoryInterface $repo, array $operations, $devMode = true, $runScripts = true)
+	public function execute(RepositoryInterface $repo, array $operations, $devMode = true, $runScripts = true)
 	{
 		$this->_installationManager->execute($repo, $operations, $devMode, $runScripts);
 	}
