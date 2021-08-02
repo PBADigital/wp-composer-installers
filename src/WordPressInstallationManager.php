@@ -134,7 +134,7 @@ class WordPressInstallationManager extends InstallationManager {
 	/**
 	 * Executes solver operation.
 	 *
-	 * @param RepositoryInterface $repo repository in which to check
+	 * @param InstalledRepositoryInterface $repo repository in which to check
 	 * @param array $operations operation instance
 	 */
 	public function execute(InstalledRepositoryInterface $repo, array $operations, $devMode = true, $runScripts = true)
@@ -145,10 +145,10 @@ class WordPressInstallationManager extends InstallationManager {
 	/**
 	 * Executes install operation.
 	 *
-	 * @param RepositoryInterface $repo      repository in which to check
+	 * @param InstalledRepositoryInterface $repo      repository in which to check
 	 * @param InstallOperation    $operation operation instance
 	 */
-	public function install(RepositoryInterface $repo, InstallOperation $operation)
+	public function install(InstalledRepositoryInterface $repo, InstallOperation $operation)
 	{
 		$this->_installationManager->install($repo,$operation);
 	}
@@ -156,10 +156,10 @@ class WordPressInstallationManager extends InstallationManager {
 	/**
 	 * Executes update operation.
 	 *
-	 * @param RepositoryInterface $repo      repository in which to check
+	 * @param InstalledRepositoryInterface $repo      repository in which to check
 	 * @param UpdateOperation     $operation operation instance
 	 */
-	public function update(RepositoryInterface $repo, UpdateOperation $operation)
+	public function update(InstalledRepositoryInterface $repo, UpdateOperation $operation)
 	{
 		$this->_installationManager->update($repo,$operation);
 	}
@@ -167,10 +167,10 @@ class WordPressInstallationManager extends InstallationManager {
 	/**
 	 * Uninstalls package.
 	 *
-	 * @param RepositoryInterface $repo      repository in which to check
+	 * @param InstalledRepositoryInterface $repo      repository in which to check
 	 * @param UninstallOperation  $operation operation instance
 	 */
-	public function uninstall(RepositoryInterface $repo, UninstallOperation $operation)
+	public function uninstall(InstalledRepositoryInterface $repo, UninstallOperation $operation)
 	{
 		$this->_installationManager->uninstall($repo,$operation);
 	}
@@ -178,10 +178,10 @@ class WordPressInstallationManager extends InstallationManager {
 	/**
 	 * Executes markAliasInstalled operation.
 	 *
-	 * @param RepositoryInterface         $repo      repository in which to check
+	 * @param InstalledRepositoryInterface         $repo      repository in which to check
 	 * @param MarkAliasInstalledOperation $operation operation instance
 	 */
-	public function markAliasInstalled(RepositoryInterface $repo, MarkAliasInstalledOperation $operation)
+	public function markAliasInstalled(InstalledRepositoryInterface $repo, MarkAliasInstalledOperation $operation)
 	{
 		$this->_installationManager->markAliasInstalled($repo,$operation);
 	}
@@ -189,10 +189,10 @@ class WordPressInstallationManager extends InstallationManager {
 	/**
 	 * Executes markAlias operation.
 	 *
-	 * @param RepositoryInterface           $repo      repository in which to check
+	 * @param InstalledRepositoryInterface           $repo      repository in which to check
 	 * @param MarkAliasUninstalledOperation $operation operation instance
 	 */
-	public function markAliasUninstalled(RepositoryInterface $repo, MarkAliasUninstalledOperation $operation)
+	public function markAliasUninstalled(InstalledRepositoryInterface $repo, MarkAliasUninstalledOperation $operation)
 	{
 		$this->_installationManager->markAliasUninstalled($repo,$operation);
 	}
